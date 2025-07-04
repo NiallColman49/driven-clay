@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Driven Clay</title>
+        <link href="./src/output.css" rel="stylesheet" />
+    </head>
+    <body class="m-0 p-0 overflow-hidden">
+        <section
+            class="js-hero-video h-screen w-screen relative flex items-center justify-center overflow-hidden"
+        >
+            <!-- Vimeo video background -->
+            <div
+                class="h-full left-0 overflow-hidden fixed top-0 w-full -z-[1]"
+            >
+                <iframe
+                    src="https://player.vimeo.com/video/935907723?title=0&byline=0&color=000000&muted=1&autoplay=1&controls=0&loop=1&background=1&app_id=122963"
+                    class="h-[56.25vw] left-1/2 min-h-screen min-w-[177.77vh] absolute top-1/2 w-screen -translate-1/2"
+                    frameborder="0"
+                    allow="autoplay; fullscreen"
+                    allowfullscreen
+                ></iframe>
+            </div>
+
+            <!-- Logo container -->
+            <img
+                src="./src/images/logo-white.svg"
+                alt="Logo"
+                class="lg:scale-150"
+            />
+        </section>
+
+        <!-- Page content - visible after video has faded out -->
+        <section
+            class="js-main-content opacity-0 relative h-screen flex flex-col justify-between py-10"
+        >
+            <div class="absolute top-0 left-0 w-full h-full -z-[2]">
+                <img
+                    src="./src/images/hero-bg.jpg"
+                    alt="Shooting Day"
+                    class="w-full h-full object-cover object-center"
+                />
+            </div>
+
+            <div
+                class="absolute top-0 left-0 h-full w-full bg-black opacity-30 -z[1]"
+            ></div>
+
+            <div class="relative w-full grid items-center justify-center">
+                <img src="./src/images/logo-white.svg" alt="Logo" />
+            </div>
+
+            <div
+                class="relative w-full grid grid-cols-1 lg:grid-cols-2 gap-x-2 py-10 h-full"
+            >
+                <div
+                    class="col-span-1 h-full flex flex-col justify-center items-center border-r border-white"
+                >
+                    <h2 class="font-['Monday'] text-3xl text-white text-center">
+                        CORPORATE CLAY<br />
+                        PIGEON EXPERIENCE
+                    </h2>
+
+                    <a
+                        href="./corporate-clay-pigeon-experience.html"
+                        target="_self"
+                        class="text-xm uppercase text-white tracking-[2.24px] mt-4"
+                    >
+                        Find out more
+                    </a>
+                </div>
+
+                <div
+                    class="col-span-1 h-full flex flex-col justify-center items-center border-l border-white"
+                >
+                    <h2 class="font-['Monday'] text-3xl text-white text-center">
+                        SIMULATED GAME<br />SHOOTING
+                    </h2>
+
+                    <a
+                        href="./simulated-game-shooting.html"
+                        target="_self"
+                        class="text-xm uppercase text-white tracking-[2.24px] mt-4"
+                    >
+                        Find out more
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative w-full grid items-center justify-center">
+                <h1 class="font-['Monday'] text-3xl text-white text-center">
+                    PREMIUM SHOOTING DAYS<br />
+                    BY DRIVEN CLAY
+                </h1>
+            </div>
+        </section>
+
+        <script src="./src/js/HeroVideo.js" type="text/javascript"></script>
+    </body>
+</html>
