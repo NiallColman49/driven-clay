@@ -23,6 +23,12 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --default-font-family: var(--font-sans);
@@ -285,6 +291,10 @@
   .overflow-hidden {
     overflow: hidden;
   }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
   .border-r {
     border-right-style: var(--tw-border-style);
     border-right-width: 1px;
@@ -308,6 +318,12 @@
   .p-0 {
     padding: calc(var(--spacing) * 0);
   }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
+  }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
@@ -320,6 +336,18 @@
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-base {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
   }
   .tracking-\[2\.24px\] {
     --tw-tracking: 2.24px;
@@ -348,6 +376,46 @@
   .lg\:grid-cols-2 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .lg\:border-t-0 {
+    @media (width >= 64rem) {
+      border-top-style: var(--tw-border-style);
+      border-top-width: 0px;
+    }
+  }
+  .lg\:border-r {
+    @media (width >= 64rem) {
+      border-right-style: var(--tw-border-style);
+      border-right-width: 1px;
+    }
+  }
+  .lg\:border-l {
+    @media (width >= 64rem) {
+      border-left-style: var(--tw-border-style);
+      border-left-width: 1px;
+    }
+  }
+  .lg\:border-none {
+    @media (width >= 64rem) {
+      --tw-border-style: none;
+      border-style: none;
+    }
+  }
+  .lg\:border-white {
+    @media (width >= 64rem) {
+      border-color: var(--color-white);
+    }
+  }
+  .lg\:px-0 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:text-3xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
 }
