@@ -7,11 +7,28 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'Brown Pro';
-  src: url('./fonts/BrownPro.woff2') format('woff2'), url('./fonts/BrownPro.woff') format('woff');
-  font-weight: normal;
+  font-family: 'Rubik';
+  src: url('./fonts/Rubik-Bold.woff') format('woff'), url('./fonts/Rubik-Bold.ttf') format('truetype');
+  font-weight: 700;
   font-style: normal;
-  font-display: swap;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url('./fonts/Rubik-Medium.woff') format('woff'), url('./fonts/Rubik-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url('./fonts/Rubik-Regular.woff') format('woff'), url('./fonts/Rubik-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url('./fonts/Rubik-Light.woff') format('woff'), url('./fonts/Rubik-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
 }
 @layer theme, base, components, utilities;
 @layer theme {
@@ -256,6 +273,12 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
+  }
+  .w-40 {
+    width: calc(var(--spacing) * 40);
+  }
   .w-full {
     width: 100%;
   }
@@ -295,14 +318,6 @@
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
   }
-  .border-r {
-    border-right-style: var(--tw-border-style);
-    border-right-width: 1px;
-  }
-  .border-l {
-    border-left-style: var(--tw-border-style);
-    border-left-width: 1px;
-  }
   .border-white {
     border-color: var(--color-white);
   }
@@ -318,9 +333,6 @@
   .p-0 {
     padding: calc(var(--spacing) * 0);
   }
-  .px-4 {
-    padding-inline: calc(var(--spacing) * 4);
-  }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
@@ -333,9 +345,8 @@
   .font-\[\'Monday\'\] {
     font-family: 'Monday';
   }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  .font-\[\'Rubik\'\] {
+    font-family: 'Rubik';
   }
   .text-base {
     font-size: var(--text-base);
@@ -353,6 +364,10 @@
     --tw-tracking: 2.24px;
     letter-spacing: 2.24px;
   }
+  .tracking-\[2px\] {
+    --tw-tracking: 2px;
+    letter-spacing: 2px;
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -365,12 +380,9 @@
   .opacity-30 {
     opacity: 30%;
   }
-  .lg\:scale-150 {
+  .lg\:w-\[200px\] {
     @media (width >= 64rem) {
-      --tw-scale-x: 150%;
-      --tw-scale-y: 150%;
-      --tw-scale-z: 150%;
-      scale: var(--tw-scale-x) var(--tw-scale-y);
+      width: 200px;
     }
   }
   .lg\:grid-cols-2 {
@@ -394,12 +406,6 @@
     @media (width >= 64rem) {
       border-left-style: var(--tw-border-style);
       border-left-width: 1px;
-    }
-  }
-  .lg\:border-none {
-    @media (width >= 64rem) {
-      --tw-border-style: none;
-      border-style: none;
     }
   }
   .lg\:border-white {
@@ -463,21 +469,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-scale-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
-@property --tw-scale-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
-@property --tw-scale-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -486,9 +477,6 @@
       --tw-translate-z: 0;
       --tw-border-style: solid;
       --tw-tracking: initial;
-      --tw-scale-x: 1;
-      --tw-scale-y: 1;
-      --tw-scale-z: 1;
     }
   }
 }
