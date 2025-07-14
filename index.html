@@ -10,10 +10,18 @@
         <section
             class="js-hero-video h-screen w-screen relative flex items-center justify-center overflow-hidden"
         >
-            <!-- Vimeo video background -->
+            <!-- Vimeo video background with placeholder -->
             <div
-                class="h-full left-0 overflow-hidden fixed top-0 w-full -z-[1]"
+                class="h-full left-0 overflow-hidden fixed top-0 w-full -z-[1] js-video-container"
             >
+                <!-- Placeholder background image -->
+                <img
+                    src="./src/images/hero-placeholder.png"
+                    alt="Placeholder"
+                    class="absolute top-0 left-0 w-full h-full object-cover object-center js-video-placeholder"
+                />
+
+                <!-- Vimeo iframe -->
                 <iframe
                     src="https://player.vimeo.com/video/935907723?title=0&byline=0&color=000000&muted=1&autoplay=1&controls=0&loop=1&background=1&app_id=122963"
                     class="h-[56.25vw] left-1/2 min-h-screen min-w-[177.77vh] absolute top-1/2 w-screen -translate-1/2"
@@ -44,7 +52,7 @@
             </div>
 
             <div
-                class="absolute top-0 left-0 h-full w-full bg-black opacity-30 -z[1]"
+                class="absolute top-0 left-0 h-full w-full bg-black opacity-20 -z[1]"
             ></div>
 
             <div class="relative w-full grid items-center justify-center">
