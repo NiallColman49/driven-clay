@@ -430,6 +430,9 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
+  .pt-10 {
+    padding-top: calc(var(--spacing) * 10);
+  }
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
   }
@@ -525,6 +528,11 @@
   .lg\:bottom-20 {
     @media (width >= 64rem) {
       bottom: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:mt-20 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 20);
     }
   }
   .lg\:h-\[680px\] {
@@ -627,6 +635,11 @@
   .lg\:py-20 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:pt-20 {
+    @media (width >= 64rem) {
+      padding-top: calc(var(--spacing) * 20);
     }
   }
   .lg\:pr-10 {
