@@ -4,8 +4,335 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Simulated Game Shooting</title>
+        <link href="./src/output.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
     </head>
     <body>
-        <h1>Simulated Game Shooting</h1>
+        <!-- Hero Image -->
+        <section class="h-[600px] lg:h-[712px] relative">
+            <img
+                src="./src/images/corporate-hero-bg.jpg"
+                alt="Corporate Hero"
+                class="absolute top-0 left-0 h-full w-full object-cover object-center -z-[1]"
+            />
+            <div class="container">
+                <div
+                    class="flex flex-col gap-y-10 lg:gap-y-20 justify-center items-center h-[600px] lg:h-[712px]"
+                >
+                    <img
+                        src="./src/images/driven-clay-mark-white.svg"
+                        alt="Driven Clay Logo"
+                        class="w-20 lg:w-[100px]"
+                    />
+
+                    <h1
+                        class="font-['Flecha'] uppercase font-medium text-3xl lg:text-6xl text-white text-center leading-[1.15]"
+                    >
+                        Simulated Game<br />
+                        Shooting
+                    </h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- Large Intro Paragraph -->
+        <section class="bg-[#071E37] py-10 lg:py-20">
+            <div class="container">
+                <div class="flex flex-col gap-y-10">
+                    <h3
+                        class="font-['Rubik'] text-white uppercase tracking-[4px]"
+                    >
+                        About Us
+                    </h3>
+
+                    <h2
+                        class="font-['Flecha'] font-medium text-[#917839] text-5xl lg:text-[110px] leading-[1.15] lg:w-[90%]"
+                    >
+                        THE ESTATE HAS A FUN AND RELAXED ATMOSPHERE
+                    </h2>
+
+                    <div class="flex flex-col lg:w-2/5 lg:self-end">
+                        <p
+                            class="font-['Rubik'] text-white text-lg leading-[1.6]"
+                        >
+                            Driven is a gem hidden in the steep valleys on the
+                            Yorkshire border. This is a proper sporting estate
+                            managed to the highest standards offering superb
+                            game shooting in the winter and now excellent
+                            simulated game days in the summer.
+                        </p>
+
+                        <a
+                            href="mailto:hello@drivenclay.co.uk"
+                            target="_self"
+                            class="block font-['Rubik'] text-white uppercase tracking-[4px] border-b border-white mt-10 mb-2.5 w-fit"
+                        >
+                            Find Out More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Swiper slider -->
+        <section class="bg-[#071E37] py-10 lg:py-20">
+            <h2
+                class="font-['Flecha'] font-medium text-[#917839] text-4xl lg:text-7xl leading-[1.15] uppercase w-full text-center tracking-[2px] mb-10"
+            >
+                Gallery
+            </h2>
+
+            <div class="h-[320px] md:h-[400px] pl-4 lg:pl-10">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img
+                                src="./src/images/slider-gallery/slider-image-1@2x.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="./src/images/slider-gallery/slider-image-2@2x.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="./src/images/slider-gallery/slider-image-3@2x.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="./src/images/slider-gallery/slider-image-4@2x.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="./src/images/slider-gallery/slider-image-5@2x.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About the day -->
+        <section class="bg-[#071E37] py-10 lg:py-20">
+            <div class="container">
+                <h2
+                    class="font-['Flecha'] font-medium text-[#917839] text-4xl lg:text-7xl leading-[1.15] uppercase w-full lg:text-center tracking-[2px] mb-10"
+                >
+                    About The Day
+                </h2>
+
+                <div class="flex lg:justify-end">
+                    <div
+                        class="flex flex-wrap lg:flex-nowrap gap-10 lg:w-2/3 lg:self-end"
+                    >
+                        <div class="w-full lg:w-1/2">
+                            <p
+                                class="font-['Rubik'] text-white text-lg leading-[1.6]"
+                            >
+                                Driven is a gem hidden in the steep valleys on
+                                the Yorkshire border. This is a proper sporting
+                                estate managed to the highest standards offering
+                                superb game shooting in the winter and now
+                                excellent simulated game days in the summer.
+                            </p>
+
+                            <a
+                                href="mailto:hello@drivenclay.co.uk"
+                                target="_self"
+                                class="block font-['Rubik'] text-white uppercase tracking-[4px] border-b border-white mt-10 mb-2.5 w-fit"
+                            >
+                                Find Out More
+                            </a>
+                        </div>
+
+                        <div class="w-full lg:w-1/2 rounded-xl overflow-hidden">
+                            <img
+                                src="./src/images/about-the-day@2x.png"
+                                alt="About The Day"
+                                class="w-full h-full object-center object-cover"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Further Details -->
+        <section class="bg-[#071E37] py-10 lg:py-20">
+            <div class="container">
+                <h2
+                    class="font-['Flecha'] font-medium text-[#917839] text-4xl lg:text-7xl leading-[1.15] uppercase w-full tracking-[2px] mb-10"
+                >
+                    Further Details
+                </h2>
+
+                <div class="flex">
+                    <div
+                        class="flex flex-wrap lg:flex-nowrap gap-10 lg:items-end"
+                    >
+                        <div
+                            class="w-full lg:w-1/2 rounded-xl overflow-hidden h-[480px] lg:h-[680px]"
+                        >
+                            <img
+                                src="./src/images/driven-generic-shoot.png"
+                                alt="Further Details"
+                                class="w-full h-full object-center object-cover"
+                            />
+                        </div>
+
+                        <div class="w-full lg:w-1/2 lg:pr-40">
+                            <p
+                                class="font-['Rubik'] text-white text-lg leading-[1.6]"
+                            >
+                                Each and every day we arrange will be tailored
+                                to our guests specific requirements and taking
+                                the weather into account The simulated days are
+                                organised just like a traditional driven game
+                                day.<br /><br />
+                                We meet in the morning for coffee and bacon
+                                rolls, draw pegs and then set out on our way for
+                                the first of four drives. The days work best
+                                with a minimum of 12 guns and up to 18 or more
+                                for a special bespoke day. We run each of the
+                                drives twice or three time so one guest will
+                                shoot the other will load, then you switch..
+                            </p>
+
+                            <a
+                                href="mailto:hello@drivenclay.co.uk"
+                                target="_self"
+                                class="block font-['Rubik'] text-white uppercase tracking-[4px] border-b border-white mt-10 mb-2.5 w-fit"
+                            >
+                                Find Out More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Costs and Catering -->
+        <section class="bg-[#071E37] py-10 lg:py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 lg:h-[760px]">
+                <div class="col-span-1 h-full relative">
+                    <img
+                        src="./src/images/costs.png"
+                        alt="Costs"
+                        class="w-full h-full object-cover object-center"
+                    />
+
+                    <h3
+                        class="font-['Flecha'] font-medium text-white text-2xl lg:text-5xl leading-[1.15] uppercase w-full tracking-[1px] text-center absolute z-[1] bottom-10 lg:bottom-20"
+                    >
+                        Costs
+                    </h3>
+                </div>
+
+                <div class="col-span-1 h-full relative">
+                    <img
+                        src="./src/images/catering.png"
+                        alt="Catering"
+                        class="w-full h-full object-cover object-center"
+                    />
+
+                    <h3
+                        class="font-['Flecha'] font-medium text-white text-2xl lg:text-5xl leading-[1.15] uppercase w-full tracking-[1px] text-center absolute z-[1] bottom-10 lg:bottom-20"
+                    >
+                        Catering
+                    </h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial -->
+        <section class="bg-[#071E37] pt-10 lg:pt-20 pb-20 lg:pb-40">
+            <div class="container">
+                <div class="flex flex-col gap-y-6">
+                    <h3
+                        class="text-white text-center font-['Flecha'] font-medium text-2xl lg:text-5xl leading-[1.15]"
+                    >
+                        "I have had the pleasure of organising many days over
+                        the years at Raisthorpe Flyers with Teams of 10, 15 and
+                        20 guests and we have always enjoyed the day ."
+                    </h3>
+
+                    <span class="text-white text-center w-full block text-xl"
+                        >David Aarons</span
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- Google Map -->
+        <section>
+            <div id="map" class="w-full h-[600px]"></div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-[#071E37] py-10 lg:py-20">
+            <div class="container">
+                <div
+                    class="flex flex-wrap lg:flex-no-wrap flex-col lg:flex-row justify-between gap-y-10 lg:gap-y-0"
+                >
+                    <div>
+                        <img
+                            src="./src/images/driven-clay-mark-white.svg"
+                            alt="Driven Clay Logo"
+                            class="w-20"
+                        />
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-10">
+                        <div class="sm:mr-10 lg:mr-20">
+                            <h3 class="text-white font-['Rubik']">Location</h3>
+                            <p class="text-white font-['Rubik']">
+                                Our Address, Town,<br />
+                                City, Postcode
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-white font-['Rubik']">
+                                Contact Us
+                            </h3>
+                            <p class="text-white font-['Rubik']">
+                                0123 456 789<br />
+                                hello@drivenclay.co.uk
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-white font-['Rubik']">Follow Us</h3>
+                            <p class="text-white font-['Rubik']">
+                                Instagram<br />
+                                Facebook
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./src/js/Swiper.js"></script>
+        <script
+            async
+            defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcPGYpXRoyrhtlSpid1X8_HOkEat6laFM&callback=initMap"
+        ></script>
+        <script src="./src/js/GoogleMap.js"></script>
     </body>
 </html>
